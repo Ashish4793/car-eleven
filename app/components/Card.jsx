@@ -5,7 +5,7 @@ const Card = () => {
         {
           id: 1,
           name: "Bike Wash",
-          price: "₹60",
+          price: "₹70",
           description: "A quick and effective wash to keep your bike spotless.",
           features: [
             "Pressure Washing",

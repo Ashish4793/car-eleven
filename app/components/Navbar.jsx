@@ -1,14 +1,14 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Car, Menu, X, AlarmClockCheck } from "lucide-react";
+import { Menu, X, AlarmClockCheck } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="top-0 z-50 w-full bg-black/20 opacity-100 visible backdrop-blur-md border-b border-white/10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 md:px-6 lg:px-14">
         <div className="flex items-center justify-between h-20">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-2 group z-50">
@@ -45,10 +45,12 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="flex items-center gap-4">
+            <Link href={'/appointment'}>
             <button className="hidden md:flex items-center px-6 py-2.5 bg-rose-500 rounded-xl text-white font-medium hover:scale-105 transition-transform">
               <AlarmClockCheck className="h-5 w-5 mr-2" />
               Book Appointment
             </button>
+            </Link>
 
             {/* Mobile Menu Button */}
             <button
@@ -100,10 +102,12 @@ export default function Navbar() {
                 Contact
               </Link>
 
+              <Link href={'/appointment'}>
               <button className="mt-4 px-8 py-3 bg-rose-500 rounded-xl text-white font-medium flex items-center justify-center hover:scale-105 transition-transform">
                 <AlarmClockCheck className="h-6 w-6 mr-2" />
                 Book Appointment
               </button>
+              </Link>
             </div>
           </div>
         </div>

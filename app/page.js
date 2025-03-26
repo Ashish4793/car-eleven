@@ -27,24 +27,24 @@ export default function Home() {
                 Premium car washing services that transform your vehicle with meticulous attention to detail.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-  <Link href={'/booking'} className="w-full sm:w-auto">
-    <button 
-      type="button" 
-      className="w-full sm:min-w-[180px] focus:outline-none text-white bg-rose-500 hover:bg-rose-600 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-md px-5 py-2.5"
-    >
-      Book Now
-    </button>
-  </Link>
-  
-  <Link href={'#services'} className="w-full sm:w-auto">
-    <button 
-      type="button" 
-      className="w-full sm:min-w-[180px] text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-5 py-2.5"
-    >
-      Explore Services
-    </button>
-  </Link>
-</div>
+                <Link href={'/appointment'} className="w-full sm:w-auto">
+                  <button
+                    type="button"
+                    className="w-full sm:min-w-[180px] focus:outline-none text-white bg-rose-500 hover:bg-rose-600 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-md px-5 py-2.5"
+                  >
+                    Book Now
+                  </button>
+                </Link>
+
+                <Link href={'#services'} className="w-full sm:w-auto">
+                  <button
+                    type="button"
+                    className="w-full sm:min-w-[180px] text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-5 py-2.5"
+                  >
+                    Explore Services
+                  </button>
+                </Link>
+              </div>
 
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Redefining Car Care with Excellence</h2>
                 <p className="text-zinc-200 text-xl leading-relaxed">
-                Car Eleven is committed to delivering top-quality car washing services with precision and care. Our skilled team uses modern equipment and eco-friendly products to give your vehicle the attention it deserves. Experience a spotless shine every time!
+                  Car Eleven is committed to delivering top-quality car washing services with precision and care. Our skilled team uses modern equipment and eco-friendly products to give your vehicle the attention it deserves. Experience a spotless shine every time!
                 </p>
                 <div className="grid grid-cols-2 gap-6 pt-4">
                   <div className="flex items-start gap-3">
@@ -160,13 +160,13 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-zinc-100 mt-4">
-              &#34;Car Eleven did an amazing job on my SUV. It hadn&#39;t been detailed in years, and they made it look brand new again. Highly recommend!&#34;
+                &#34;Car Eleven did an amazing job on my SUV. It hadn&#39;t been detailed in years, and they made it look brand new again. Highly recommend!&#34;
               </p>
             </div>
             <div className="bg-zinc-800 p-6 rounded-lg shadow-lg">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
-                <Image src="https://img.icons8.com/color/48/user-male-circle--v1.png" alt="user-avatar" width={20} height={20} className="w-full h-full" />
+                  <Image src="https://img.icons8.com/color/48/user-male-circle--v1.png" alt="user-avatar" width={20} height={20} className="w-full h-full" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Niel</h3>
@@ -174,13 +174,13 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-zinc-100 mt-4">
-              &#34;The premium detail package is worth every penny. My car hasn&#39;t looked this good since I drove it off the lot. The team is professional and thorough.&#34;
+                &#34;The premium detail package is worth every penny. My car hasn&#39;t looked this good since I drove it off the lot. The team is professional and thorough.&#34;
               </p>
             </div>
             <div className="bg-zinc-800 p-6 rounded-lg shadow-lg">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
-                <Image src="https://img.icons8.com/color/48/user-male-circle--v1.png" alt="user-avatar" width={20} height={20} className="w-full h-full" />
+                  <Image src="https://img.icons8.com/color/48/user-male-circle--v1.png" alt="user-avatar" width={20} height={20} className="w-full h-full" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Allen Reeves</h3>
@@ -188,22 +188,22 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-zinc-100 mt-4">
-              &#34;I love how easy it is to book online. The service is always fast and the results are consistently excellent. Car Eleven is my go-to car wash!&#34;
+                &#34;I love how easy it is to book online. The service is always fast and the results are consistently excellent. Car Eleven is my go-to car wash!&#34;
               </p>
             </div>
 
             <div className="bg-zinc-800 p-6 rounded-lg shadow-lg">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
-                <Image src="https://img.icons8.com/color/48/user-male-circle--v1.png" alt="user-avatar" width={20} height={20} className="w-full h-full" />
+                  <Image src="https://img.icons8.com/color/48/user-male-circle--v1.png" alt="user-avatar" width={20} height={20} className="w-full h-full" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Suyash Brahamane</h3>
-                  <div className="text-blue-500">★★★★★</div>
+                  <div className="text-amber-500">★★★★★</div>
                 </div>
               </div>
               <p className="text-zinc-100 mt-4">
-              &#34;Loved the service. The team is very professional and the results are amazing. I would definitely recommend Car Eleven to my friends and family.&#34;
+                &#34;Loved the service. The team is very professional and the results are amazing. I would definitely recommend Car Eleven to my friends and family.&#34;
               </p>
             </div>
           </div>
@@ -237,7 +237,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-zinc-100">+91 9201070439, 9329566600</p>
+                    <p className="text-zinc-100">+91 9201070439</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -246,7 +246,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-zinc-100">info@careleven.com</p>
+                    <p className="text-zinc-100">careleven11@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -262,45 +262,45 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-2xl bg-zinc-900 p-8 shadow-xl">
-                <h3 className="text-2xl font-bold">Send Us a Message</h3>
-                <form className="mt-6 space-y-6">
-                  <div className="space-y-2">
-                    <label htmlFor="contact-name" className="text-md mb-2 font-medium text-white">
-                      Name
-                    </label>
-                    <input
-                      id="contact-name"
-                      placeholder="Your name"
-                      className="w-full rounded-lg border border-white/10 bg-zinc-800 p-3 text-white placeholder:text-white/40 focus:border-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="contact-email" className="text-md mb-2 font-medium text-white">
-                      Email
-                    </label>
-                    <input
-                      id="contact-email"
-                      type="email"
-                      placeholder="Your email"
-                      className="w-full rounded-lg border border-white/10 bg-zinc-800 p-3 text-white placeholder:text-white/40 focus:border-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="contact-message" className="text-md mb-2 font-medium text-white">
-                      Message
-                    </label>
-                    <textarea
-                      id="contact-message"
-                      rows={4}
-                      placeholder="Your message"
-                      className="w-full rounded-lg border border-white/10 bg-zinc-800 p-3 text-white placeholder:text-white/40 focus:border-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500"
-                    ></textarea>
-                  </div>
-                  <button type="submit" className="text-white justify-center inline-flex w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">
-                    <Send className="h-5 w-5 mr-2"/>
-                    Send Message</button>
-                  </form>
-              </div>
+              <h3 className="text-2xl font-bold">Send Us a Message</h3>
+              <form className="mt-6 space-y-6">
+                <div className="space-y-2">
+                  <label htmlFor="contact-name" className="text-md mb-2 font-medium text-white">
+                    Name
+                  </label>
+                  <input
+                    id="contact-name"
+                    placeholder="Your name"
+                    className="w-full rounded-lg border border-white/10 bg-zinc-800 p-3 text-white placeholder:text-white/40 focus:border-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="contact-email" className="text-md mb-2 font-medium text-white">
+                    Email
+                  </label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    placeholder="Your email"
+                    className="w-full rounded-lg border border-white/10 bg-zinc-800 p-3 text-white placeholder:text-white/40 focus:border-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="contact-message" className="text-md mb-2 font-medium text-white">
+                    Message
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    rows={4}
+                    placeholder="Your message"
+                    className="w-full rounded-lg border border-white/10 bg-zinc-800 p-3 text-white placeholder:text-white/40 focus:border-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500"
+                  ></textarea>
+                </div>
+                <button type="submit" className="text-white justify-center inline-flex w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">
+                  <Send className="h-5 w-5 mr-2" />
+                  Send Message</button>
+              </form>
+            </div>
           </div>
         </section>
 
@@ -317,7 +317,9 @@ export default function Home() {
             <p className="mx-auto mt-6 max-w-[600px] text-zinc-200 text-xl">
               Book your appointment today and see why we&#39;re the most trusted car wash in town.
             </p>
-            <button type="button" className="text-zinc-50 my-12 bg-rose-500 hover:bg-rose-600 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">Book Your Appointment Now</button>
+            <Link href={'/appointment'}>
+              <button type="button" className="text-zinc-50 my-12 bg-rose-500 hover:bg-rose-600 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">Book Your Appointment Now</button>
+            </Link>
           </div>
         </section>
 
@@ -404,11 +406,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="h-5 w-5 text-purple-500" />
-                  <span className="text-white/60 text-lg">(123) 456-7890</span>
+                  <span className="text-white/60 text-lg">+91 92010-70439</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-5 w-5 text-blue-500" />
-                  <span className="text-white/60 text-lg">info@careleven.com</span>
+                  <span className="text-white/60 text-lg">careleven11@gmail.com</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Clock className="h-5 w-5 text-green-500" />
