@@ -1,9 +1,17 @@
 import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 import validator from "validator";
-import { Resend } from 'resend';
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  host: "smtp-relay.sendinblue.com",
+  port: 587,
+  auth: {
+    user: process.env.MAIL_USER, 
+    pass: process.env.MAIL_PASS,
+  },
+});
+
 const MONGODB_URI = process.env.MONGODB_URI;
 if (!MONGODB_URI) throw new Error("MONGODB_URI is missing!");
 
@@ -52,11 +60,12 @@ export async function POST(req) {
     const newAppointment = await Appointment.create({ name, email, phone, service, date, time, notes });
 
     console.log("✅ Appointment Saved:", newAppointment);
-    resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'ashishahirwar4793@gmail.com',
-      subject: 'New Appointment Recieved!',
-      html: `<p>Dear Admin,</p><p>A new appointment has been received.</p><p style='font-weight: bold;'>Appointment Details :-</p><p>Name: ${newAppointment.name}</p><p>Email: ${newAppointment.email}</p><p>Phone: ${newAppointment.phone}</p><p>Service: ${newAppointment.service}</p><p>Date: ${newAppointment.date}</p><p>Time: ${newAppointment.time}</p><p>Notes: ${newAppointment.notes || "N/A"}</p><p></p><p>Regards,</p><p>Postmaster@CarEleven</p>`,
+
+    await transporter.sendMail({
+      from: '"Alerts @CarEleven" <ashishahirwar4793@gmail.com>', // Must be the verified email
+      to: "ashishku1063@gmail.com", 
+      subject: "New Appointment Recieved",
+      html: `<p>Dear Admin,</p><p style='font-weight : bold;'>A new appointment has been received!</p><p style='font-weight: bold;'>Appointment Details :-</p><p>Name: ${newAppointment.name}</p><p>Email: ${newAppointment.email}</p><p>Phone: ${newAppointment.phone}</p><p>Service: ${newAppointment.service}</p><p>Date: ${newAppointment.date}</p><p>Time: ${newAppointment.time}</p><p>Notes: ${newAppointment.notes || "N/A"}</p><p></p><p>Regards,</p><p>Postmaster@CarEleven</p>`,
     });
 
     return NextResponse.json({ message: "Appointment booked successfully!", appointment: newAppointment }, { status: 201 });
